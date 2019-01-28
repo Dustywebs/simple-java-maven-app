@@ -12,7 +12,7 @@ pipeline {
             steps {
              script { 
                 //foo.info 'Starting up'
-                sayHello 'Joe'
+                foo 'Joe'
              }
             }
         }
