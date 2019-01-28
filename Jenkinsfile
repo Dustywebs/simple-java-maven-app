@@ -1,3 +1,7 @@
+@Library('utils') _
+
+foo.info 'Starting up'
+
 pipeline {
     agent {
         docker {
