@@ -1,7 +1,5 @@
 @Library('SharedRepo') _
 
-foo.info 'Starting up'
-
 pipeline {
     agent {
         docker {
@@ -10,6 +8,13 @@ pipeline {
         }
     }
     stages {
+        stage ('Example') {
+        steps {
+             script { 
+                foo.info 'Starting up'
+             }
+        }
+    
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
