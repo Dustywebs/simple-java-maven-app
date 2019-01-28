@@ -11,7 +11,8 @@ pipeline {
         stage ('Example') {
             steps {
              script { 
-                foo.info 'Starting up'
+                //foo.info 'Starting up'
+                sayHello 'Joe'
              }
             }
         }
