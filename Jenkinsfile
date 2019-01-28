@@ -14,6 +14,7 @@ pipeline {
             steps {
              script { 
                 sayHello 'Joe'
+                foo.info 'Starting up'
              }
             }
         }
