@@ -1,4 +1,4 @@
-@Library('utils') _
+@Library('SharedRepo') _
 
 foo.info 'Starting up'
 
