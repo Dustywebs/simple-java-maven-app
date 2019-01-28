@@ -9,10 +9,11 @@ pipeline {
     }
     stages {
         stage ('Example') {
-        steps {
+            steps {
              script { 
                 foo.info 'Starting up'
              }
+            }
         }
     
         stage('Build') {
