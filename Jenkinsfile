@@ -1,5 +1,7 @@
 @Library('SharedRepo') _
 
+foo.info 'Starting up'
+
 pipeline {
     agent {
         docker {
@@ -11,8 +13,7 @@ pipeline {
         stage ('Example') {
             steps {
              script { 
-                //foo.info 'Starting up'
-                foo 'Joe'
+                sayHello 'Joe'
              }
             }
         }
